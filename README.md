@@ -10,24 +10,34 @@ python btc_option.py
 
 ・起動すると、下記ブラウザで表示される設定に基づき、ヘッドレスFirefoxでbybitの情報を取得します。
 取得したデータは、staticフォルダに保存されます。
-予めアプリケーションフォルダ以下にstaticフォルダを作成してください。
+
+・予めアプリケーションフォルダ以下にstaticフォルダを作成してください。
 以下のブラウザからリンクしても確認できます。
 
 ・起動後、ブラウザに　http://127.0.0.1:8080/static と入力してください。
+
 上部には、取得したデータへのリンク一覧
+
 下部には、データを取得するための設定などができるインプット領域があります。
 
 〇Lineメールを送信
+
 ・チャネルアクセストークンは、　https://blog.kimizuka.org/entry/2023/11/08/232842#google_vignette　
 で発行し、.envファイルに記載します。
+
 ・ユーザーIDは、　https://developers.line.biz/ja/docs/messaging-api/getting-user-ids/#get-all-friends-user-ids
 を参考にして、.envファイルに記載します。
+
 ・Lineメールを発行する命令は、await send_line(linemsg)　ですが、コメントアウトしていますので、必要な方はコメントを外してください。
+
 ・　.envの記載例（#はコメント行）
 #""や''は不要です。
 #参考にしたｕｒｌ https://maku77.github.io/nodejs/env/dotenv.html
+
 ・　.env
+
 CHANNEL_TOKEN=
+
 USER_ID=
 
 ・なお、LINE Messaging API SDK for Pythonのv3は、公式のREADMEのコードでは、動かないワナが仕掛けられているので、ご注意ください。
