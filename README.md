@@ -24,8 +24,8 @@ python btc_option.py
 Lineメールを発行する命令は、await send_line(linemsg)　ですが、コメントアウトしていますので、必要な方はコメントを外してください。
 .envの記載例（#はコメント行）
 #""や''は不要です。
-#参考にしたｕｒｌ
-# https://maku77.github.io/nodejs/env/dotenv.html
+#参考にしたｕｒｌ https://maku77.github.io/nodejs/env/dotenv.html
+.env
 CHANNEL_TOKEN=
 USER_ID=
 
