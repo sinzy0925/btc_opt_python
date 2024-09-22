@@ -17,10 +17,21 @@ python btc_option.py
 上部には、取得したデータへのリンク一覧
 下部には、データを取得するための設定などができるインプット領域があります。
 
-〇Lineメールを送信する場合は、事前に
+〇Lineメールを送信する場合は、事前にhttps://blog.kimizuka.org/entry/2023/11/08/232842#google_vignette　
+で、チャネルアクセストークンを発行し、.envファイルに記載します。
+また、ユーザーIDは、https://developers.line.biz/ja/docs/messaging-api/getting-user-ids/#get-all-friends-user-ids
+を参考にして、.envファイルに記載します。
+Lineメールを発行する命令は、await send_line(linemsg)　ですが、コメントアウトしていますので、必要な方はコメントを外してください。
+.envの記載例（#はコメント行）
+#""や''は不要です。
+#参考にしたｕｒｌ
+# https://maku77.github.io/nodejs/env/dotenv.html
+CHANNEL_TOKEN=
+USER_ID=
 
 
+なお、LINE Messaging API SDK for Pythonのv3は、公式のREADMEのコードでは、動かないワナが仕掛けられているので、ご注意ください。
+ここを見て、正常稼働するアプリが実装できました。
+https://mo22comi.com/line-messaging-api-sdk-v3/
 
-
-
-
+以上
