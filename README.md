@@ -23,15 +23,27 @@ python btc_option.py
 
 下部には、データを取得するための設定などができるインプット領域があります。
 
+〇とりあえず動かしてみる場合
+
+・staticフォルダに添付されているファイルはそのままダウンロードしてください。
+
+・staticフォルダの、paramDDMMYY.csvファイルを編集します。
+
+編集方法
+
+今日が、2024/09/25の場合 yyYY/MM/DD を DD-MM-YYに変更して、以下のように変更します。
+
+26-09-24,27-09-24,28-09-24
+
 〇Lineメールを送信
 
 ・チャネルアクセストークンは、　https://blog.kimizuka.org/entry/2023/11/08/232842#google_vignette　
-で発行し、.envファイルに記載します。
+を参考にして発行し、.envファイルに記載します。
 
 ・ユーザーIDは、　https://developers.line.biz/ja/docs/messaging-api/getting-user-ids/#get-all-friends-user-ids
 を参考にして、.envファイルに記載します。
 
-・Lineメールを発行する命令は、await send_line(linemsg)　ですが、コメントアウトしていますので、必要な方はコメントを外してください。
+・Lineメールを発行する命令は、await send_line(linemsg)　ですが、コメントアウトしていますので、必要な方は#コメントを外してください。
 
 ・　.envの記載例（#はコメント行）
 #""や''は不要です。
@@ -47,5 +59,7 @@ USER_ID=
 ここを見て、正常稼働するアプリが実装できました。　
 
 https://mo22comi.com/line-messaging-api-sdk-v3/
+
+
 
 以上
